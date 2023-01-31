@@ -1,0 +1,22 @@
+body{
+    background-color: wheat;
+}
+a:link{
+    color: hotpink;
+}
+a:visited{
+    color: orange;
+}
+a:hover{
+    background-color: greenyellow;
+}
+p:not(.maravillas){
+    color: aqua;
+}
+.container div:nth-child(1){
+    color: purple;
+}
+
+.Alicia::after{
+    content: "ME quiero morir";
+}
