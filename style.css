@@ -31,3 +31,20 @@ background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, F
 .cuadrado:hover{
     transform: rotate(30deg);
 }
+.container{
+position: relative;
+width: 80px;
+height: 80px;
+border: 5px solid pink;
+perspective:6px ; /*Inclinacion*/
+}
+ .item{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #89fffd;
+    border: 3px solid blue;
+    opacity: .5;
+    transform-style: preserve-3d;
+    transform: rotateX(10deg);
+ }
