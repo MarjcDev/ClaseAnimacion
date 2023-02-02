@@ -1,3 +1,34 @@
+.card{
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;/**/
+    position: relative;
+}
+.card:hover{
+    transform:rotatey(180deg)
+}
+
+.front,
+.back{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute; /*Se adhiere al relative*/
+    backface-visibility: hidden ; /*CSS permite mostrar la cara posterior de un elemento. Esta propiedad recibe dos valores: visible (visible) y hidden (oculto); por defecto, su valor es visible.*/
+}
+
+.front{
+background-color: #ef32d9;
+
+}
+.back{
+background-color: #89fffd;
+transform: rotateY(180deg) ;
+
+}
+
+
+
 .shadow, .shadow-two, .shadow-three{
     background: lightgray;
     width: 100px;
@@ -5,10 +36,10 @@
     border-radius: 50%;
 }
 .circle, .circle-two, .circle-three{
-background: #ef32d9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius: 50%;
+   background: #ef32d9;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   border-radius: 50%;
    width: 100px;
    height: 100px; 
 }
@@ -36,7 +67,7 @@ position: relative;
 width: 80px;
 height: 80px;
 border: 5px solid pink;
-perspective:6px ; /*Inclinacion*/
+perspective:6px ; /*Menos es el numero, mas grande la perspectiva*/
 }
  .item{
     position: absolute;
